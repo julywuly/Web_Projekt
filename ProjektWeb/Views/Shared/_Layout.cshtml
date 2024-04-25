@@ -3,17 +3,49 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Fußball</title>
+    <title>@ViewData["Title"] - Unser Spotify</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProjektWeb.styles.css" asp-append-version="true" />
 
     <style>
+        body {
+            background-color: lightgreen;
+        }
 
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex; /* Flexbox für horizontale Anordnung */
+            justify-content: space-between; /* Inhalt auf beiden Seiten ausrichten */
+            align-items: center; /* Vertikal zentrieren */
+        }
 
+        nav ul {
+            list-style-type: none; /* Entfernen der Aufzählungspunkte */
+            padding: 0; /* Entfernen des Innenabstands */
+            margin: 0; /* Entfernen des Außenabstands */
+            display: flex; /* Flexbox für horizontale Anordnung */
+        }
 
+            nav ul li {
+                margin-right: 15px; /* Abstand zwischen den Links */
+            }
+
+        a:link, a:visited {
+            color: white;
+           
+            text-align: center;
+            
+        }
+
+        a:hover, a:active {
+            background-color: black;
+            color: lightgreen;
+          text-decoration:underline;
+        }
     </style>
-
 
 </head>
 <body>
@@ -21,27 +53,25 @@
     @*3-spaltiges Layout*@
     <div class="container-fluid">
         <header class="row">
-            Kopfbereich
-        </header>
-        <main class="row">
+
             <nav class="col-2">
                 <partial name="Navigation" />
             </nav>
-            <content class="col-8">
+           
+        </header>
+        <main class="row">
+            
+            <content class="col-12">
                 Inhalt
                 @RenderBody()
             </content>
-            <aside class="col-2">
-                Seitenbereich
-            </aside>
+ 
         </main>
 
         <footer class="row">
             Fußbereich
         </footer>
     </div>
-
-
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

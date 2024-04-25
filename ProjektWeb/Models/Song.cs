@@ -10,7 +10,5 @@
 
         public DateTime Released { get; set; }
 
-        public List<Album> Albums { get; set; }
-
     }
 }

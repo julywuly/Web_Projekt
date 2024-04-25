@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juliana\\source\\repos\\ProjektWeb\\ProjektWeb\\ProjektWeb.csproj": {}
+    "C:\\Users\\sagme\\OneDrive - HTL Anichstrasse\\Dokumente\\HTL 4. Klasse\\SWP_Vogt\\ProjektWeb\\ProjektWeb\\ProjektWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juliana\\source\\repos\\ProjektWeb\\ProjektWeb\\ProjektWeb.csproj": {
+    "C:\\Users\\sagme\\OneDrive - HTL Anichstrasse\\Dokumente\\HTL 4. Klasse\\SWP_Vogt\\ProjektWeb\\ProjektWeb\\ProjektWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juliana\\source\\repos\\ProjektWeb\\ProjektWeb\\ProjektWeb.csproj",
+        "projectUniqueName": "C:\\Users\\sagme\\OneDrive - HTL Anichstrasse\\Dokumente\\HTL 4. Klasse\\SWP_Vogt\\ProjektWeb\\ProjektWeb\\ProjektWeb.csproj",
         "projectName": "ProjektWeb",
-        "projectPath": "C:\\Users\\Juliana\\source\\repos\\ProjektWeb\\ProjektWeb\\ProjektWeb.csproj",
-        "packagesPath": "C:\\Users\\Juliana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juliana\\source\\repos\\ProjektWeb\\ProjektWeb\\obj\\",
+        "projectPath": "C:\\Users\\sagme\\OneDrive - HTL Anichstrasse\\Dokumente\\HTL 4. Klasse\\SWP_Vogt\\ProjektWeb\\ProjektWeb\\ProjektWeb.csproj",
+        "packagesPath": "C:\\Users\\sagme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sagme\\OneDrive - HTL Anichstrasse\\Dokumente\\HTL 4. Klasse\\SWP_Vogt\\ProjektWeb\\ProjektWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Juliana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sagme\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -52,13 +47,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.18, )"
+              "version": "[7.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.18, )"
+              "version": "[7.0.17, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -88,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
