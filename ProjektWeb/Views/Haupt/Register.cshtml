@@ -1,0 +1,69 @@
+﻿@model ProjektWeb.Models.User
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<form asp-controller="Haupt" asp-action="Register" method="post">
+    <table>
+        <thead>
+            
+            <tr>
+                <th colspan="2">Registrierungsformular</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vorname</td>
+
+                <td><input type="text" asp-for="Firstname" /></td>
+            </tr>
+            <tr>
+                <td>Nachname *</td>
+
+                <td><input type="text" asp-for="Lastname" /></td>
+                <td>
+                    <span asp-validation-for="Lastname">
+
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>Geburtsdatum *</td>
+
+                <td><input type="date" asp-for="Birthdate" /></td>
+                <td>
+                    <span asp-validation-for="Birthdate">
+
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies *</td>
+
+                <td><textarea asp-for="Hobbies" rows="4" cols="30" ></textarea></td>
+                <td>
+                    <span asp-validation-for="Hobbies">
+
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type ="submit" value="registrierien"></td>
+                <td><input type="reset" value="abbrechen"></td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    * ... Pflichtfelder
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</form>
+

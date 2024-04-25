@@ -1,0 +1,50 @@
+﻿@model List<ProjektWeb.Models.User>
+@{
+    ViewData["Title"] = "AllUsers";
+}
+@if (Model == null)
+{
+    <p>
+        Die Benutzer gibt es nicht !!
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr> 
+                <th colspan =" 3">
+                    Alle Benutzer anzeigen
+                </th>
+            </tr>
+            <tr>
+                <th>UserId</th>
+                <th>Name</th>
+                <th>Geburtsdatum</th>
+                <th>Hobbies</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (User u in Model)
+            {
+                <tr>
+                    <td>@u.UserId</td>
+                    <td>@u.Firstname @u.Lastname</td>
+                    <td>@u.Birthdate.ToShortDateString()</td>
+                    <td>@u.Hobbies</td>
+
+                </tr>
+            }
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan=" 4">
+                    Fußzeile
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    
+
+}

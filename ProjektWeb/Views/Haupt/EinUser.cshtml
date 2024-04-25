@@ -1,0 +1,28 @@
+﻿@model ProjektWeb.Models.User
+@{
+    ViewData["Title"] = "EinUser";
+}
+
+
+@if (Model == null)
+{
+    <p>Der Benutzer mit dieser ID existiert nicht!</p>
+}
+else
+{
+
+    <h3>Daten des Users mit der Id=@Model.UserId</h3>
+
+    <p>
+        Name: @Model.Firstname @Model.Lastname
+    </p>
+
+    <p>
+        Geb.: @Model.Birthdate.ToLongDateString()
+    </p>
+    <p>
+        Hobbies: @Model.Hobbies
+    </p>
+}
+
+

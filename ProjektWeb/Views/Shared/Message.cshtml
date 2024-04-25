@@ -1,0 +1,23 @@
+﻿@model ProjektWeb.Models.Message
+
+@{
+    ViewData["Title"] = "Message";
+}
+
+<h1>
+    @Model.Title
+</h1>
+
+<p>
+    <b>
+        @Model.MessageText
+    </b>
+</p>
+
+@if(!string.IsNullOrEmpty(Model.Solution)){
+    <p>
+        Lösung
+    </p>
+    @Model.Solution
+    
+}
